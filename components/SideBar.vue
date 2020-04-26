@@ -1,5 +1,5 @@
 <template>
-  <div class="sideBar" id="sideBar">
+  <div class="sideBar transition" id="sideBar">
     <div class="sideBar_header">
       <div class="sideBar_header__profile">
         <div class="sideBar_header__profile__teamName">

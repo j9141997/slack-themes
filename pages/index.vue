@@ -1,18 +1,21 @@
 <template>
   <div class="container">
     <Header/>
-    <main-content/>
+    <Side-bar/>
+    <Input-field/>
   </div>
 </template>
 
 <script>
-import Header      from '~/components/Header'
-import MainContent from '~/components/MainContent'
+import Header      from '@/components/Header'
+import SideBar     from '@/components/SideBar'
+import InputField  from '@/components/InputField'
 
 export default {
   components: {
     Header,
-    MainContent
+    SideBar,
+    InputField
   }
 }
 </script>
@@ -24,6 +27,7 @@ body {
   overflow: hidden;
   height: 100%;
   width: 100%;
+  font-size: 100%;
 }
 
 .container {
@@ -32,6 +36,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #ffffff;
   font-size: 15px;
+}
+
+.transition {
+  transition: all  0.3s ease;
 }
 
 </style>
